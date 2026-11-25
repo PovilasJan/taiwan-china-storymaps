@@ -155,6 +155,7 @@ def draw_circle(rows, country, filename, source_hash):
     metadata.add_text("MethodAttribution", "Educational adaptation inspired by Circles of Sustainability, https://circlesofsustainability.com. Domain framework adapted to this assignment. Scores refer to the selected reference samples, not official SDG thresholds.")
     metadata.add_text("SourceData", "data/indicators.json; factual observations dated 2021–2024; original data sources and reference samples are documented in that file.")
     metadata.add_text("SourceDataSHA256", source_hash)
+    metadata.add_text("SourceDataHashNormalization", "UTF-8 bytes with LF newlines")
     metadata.add_text("Palette", ",".join(PALETTE))
     metadata.add_text("CountryKey", country)
     metadata.add_text("Scores", json.dumps({row["id"]: row["scores"][country] for row in rows}, ensure_ascii=False))
@@ -173,7 +174,7 @@ def main():
             if type(score) is not int or not 1 <= score <= 9:
                 raise ValueError(f"Invalid score: {row['id']} / {country}: {score!r}")
     ASSETS.mkdir(exist_ok=True)
-    digest = hashlib.sha256(raw).hexdigest()
+    digest = hashlib.sha256(raw.replace(b'\r\n', b'\n')).hexdigest()
     for country, filename in [
         ("taiwan", "taivano-profile-circle.png"),
         ("china", "kinijos-profile-circle.png"),

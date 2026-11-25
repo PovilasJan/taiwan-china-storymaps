@@ -25,7 +25,7 @@ for country, name in [('taiwan', 'taivano-profile-circle.png'), ('china', 'kinij
     with Image.open(ROOT/'assets'/name) as picture:
         assert picture.width >= 2000 and picture.height >= 2000
         assert json.loads(picture.info['Scores']) == {row['id']: row['scores'][country] for row in source['indicators']}
-        assert picture.info['SourceDataSHA256'] == hashlib.sha256((ROOT/'data/indicators.json').read_bytes()).hexdigest()
+        assert picture.info['SourceDataSHA256'] == hashlib.sha256((ROOT/'data/indicators.json').read_bytes().replace(b'\r\n', b'\n')).hexdigest()
         picture.verify()
 for file in ['docs/index.html', 'docs/app.js', 'docs/style.css']:
     assert (ROOT/file).stat().st_size > 100
