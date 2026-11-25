@@ -1,0 +1,119 @@
+{
+  "accessed": "2026-11-25",
+  "sources": [
+    {
+      "id": "P01",
+      "citation": "National Council for Sustainable Development. (2022). Taiwan's Voluntary National Review.",
+      "url": "https://ncsd.ndc.gov.tw/_ofu/download/Vhome/2022%20Taiwan%27s%20Voluntary%20National%20Review.pdf",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "2022 VNR describes 18 localized Taiwan SDGs, not 18 UN SDGs. Search-index content retrieved; PDF URL official."
+    },
+    {
+      "id": "P02",
+      "citation": "National Council for Sustainable Development. Taiwan's Voluntary National Review and Voluntary Local Reviews.",
+      "url": "https://ncsd.ndc.gov.tw/Fore/en/Achievements",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "Policy source; do not treat policy intentions as causal evidence of effectiveness."
+    },
+    {
+      "id": "P03",
+      "citation": "Permanent Mission of the People's Republic of China to the UN. (2021 m. liepos 14 d.). Work Together to Open Up New Prospects for International Development Cooperation.",
+      "url": "https://un.china-mission.gov.cn/eng/chinaandun/economicdevelopment/sfz/202107/t20210715_9126882.htm",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "Official speech presenting China 2021 VNR; not the complete VNR PDF. Old UN PDF URL redirects to SDGs home and is not used."
+    },
+    {
+      "id": "P04",
+      "citation": "World Bank. (2022 m. balandžio 1 d.). Lifting 800 Million People Out of Poverty.",
+      "url": "https://www.worldbank.org/en/news/press-release/2022/04/01/lifting-800-million-people-out-of-poverty-new-report-looks-at-lessons-from-china-s-experience",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "Historical poverty reduction refers to then-used $1.90/day poverty line (2011 PPP), not current 2026 threshold."
+    },
+    {
+      "id": "P05",
+      "citation": "National Bureau of Statistics of China. (2025 m. rugsėjo 28 d.). Social development and people's livelihoods during the 14th Five-Year Plan.",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202509/t20250928_1961404.html",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "zh-CN",
+      "verification_note": "2024 urban/rural per-capita disposable income ratio 2.34."
+    },
+    {
+      "id": "P06",
+      "citation": "Ministry of Education Taiwan. (2023 m. birželio 19 d.). Ministry of Education Objectives for 2024.",
+      "url": "https://english.moe.gov.tw/cp-9-36273-67538-1.html",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "Policy source; do not treat policy intentions as causal evidence of effectiveness."
+    },
+    {
+      "id": "P07",
+      "citation": "National Bureau of Statistics of China. (2025 m. vasario 28 d.). Statistical Communiqué on the 2024 National Economic and Social Development.",
+      "url": "https://www.stats.gov.cn/english/PressRelease/202502/t20250228_1958822.html",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "2024 nine-year compulsory education retention 95.9%; not tertiary enrollment or literacy."
+    },
+    {
+      "id": "P08",
+      "citation": "Executive Yuan Taiwan. (2025 m. rugsėjo 3 d.). National Health Insurance.",
+      "url": "https://www.ey.gov.tw/state/A01F61B9E9A9758D/a8110473-da2f-4c3f-84da-aeebbd92aab9",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "zh-TW",
+      "verification_note": "2025-09-03 government overview says approximately99.9% of nationals (國人); not explicitly a2024 resident-population measure."
+    },
+    {
+      "id": "P09",
+      "citation": "National Healthcare Security Administration China. (2025 m. liepos 14 d.). Statistical bulletin on healthcare security development in 2024.",
+      "url": "https://app.www.gov.cn/govdata/gov/202507/14/532768/article.html",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "zh-CN",
+      "verification_note": "2024 NHSA report: basic medical insurance coverage95%; cannot infer identical benefit package to Taiwan NHI."
+    },
+    {
+      "id": "P10",
+      "citation": "Ministry of Justice Taiwan. Fourth Report on the Implementation of the International Covenant on Economic Social and Cultural Rights.",
+      "url": "https://www.humanrights.moj.gov.tw/media/20214875/03%E8%8B%B1%E6%96%87%E7%89%88-implementation-of-the-international-covenant-on-economic-social-and-cultural-rights.pdf?mediaDL=true",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "2024 Long-term Care2.0 users757089, defined coverage84.86%; denominator is estimated care need, not all elderly residents."
+    },
+    {
+      "id": "P11",
+      "citation": "Climate Change Administration Taiwan. Net Zero Roadmap.",
+      "url": "https://www.cca.gov.tw/en/climatetalks/net-zero-roadmap/1891.html",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "2050 target and measures, not claim of achievement; pathway2022 and Climate Change Response Act amendment2023."
+    },
+    {
+      "id": "P12",
+      "citation": "State Council Information Office China. (2025 m. lapkričio 8 d.). Carbon Peaking and Carbon Neutrality China's Plans and Solutions.",
+      "url": "https://english.www.gov.cn/archive/whitepaper/202511/08/content_WS690ee812c6d00ca5f9a076cd.html",
+      "accessed": "2026-11-25",
+      "source_type": "primary_official",
+      "language": "en",
+      "verification_note": "China peaking/neutrality commitments are policy goals, not observed outcome."
+    },
+    {
+      "id": "P13",
+      "citation": "United Nations Development Programme. (2025). Human Development Report 2025.",
+      "url": "https://hdr.undp.org/content/human-development-report-2025",
+      "accessed": "2026-11-25"
+    }
+  ]
+}
