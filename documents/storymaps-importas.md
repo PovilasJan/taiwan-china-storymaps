@@ -54,6 +54,8 @@ Naudokite geografinių vietų žymeklius, jei pasirinktas bazinis žemėlapis ri
 
 Į `Swipe` įkelkite [Taivano ratą](../assets/taivano-darnus-ratas.png) ir [Kinijos ratą](../assets/kinijos-darnus-ratas.png). Paveikslėlių matmenys, kriterijų eiliškumas ir skalė vienodi. Kairėje pažymėkite Taivaną, dešinėje Kiniją. Po bloku palikite metodikos ir skirtingų etalonų paaiškinimą.
 
+Papildomai paruošta [Profile Circles versija](profile-circles.md): nauji PNG su spalva pagal balą ir interaktyvus palyginimas. PNG galima naudoti tame pačiame `Swipe`, o [viešą interaktyvių ratų puslapį](https://PovilasJan.github.io/taiwan-china-storymaps/) įdėti per `Embed` arba nuorodos kortelę. Spalvų reikšmė paaiškinta papildymo instrukcijoje.
+
 ## Prieš publikuojant
 
 - Įrašyti tikrus grupės autorius, seminaro auditoriją ir laiką.

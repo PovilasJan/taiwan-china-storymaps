@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d43">
+  <meta name="description" content="Taivano ir Kinijos 28 darnios raidos rodiklių interaktyvus palyginimas, duomenys, šaltiniai ir 1–9 balų metodika.">
+  <title>Taivanas ir Kinija · Darnios raidos profiliai</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="indicators.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#criterion">Pereiti prie kriterijų</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top"><span class="brand-symbol" aria-hidden="true">◉</span> DARNIOS RAIDOS PROFILIAI</a>
+    <a href="https://github.com/PovilasJan/taiwan-china-storymaps" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">28 rodikliai · 4 sritys · 2 profiliai</p>
+      <h1 id="page-title">Taivanas ir Kinija</h1>
+      <p class="lead">Darnią raidą sudaro skirtingi rezultatai. Palyginkite juos po vieną, patikrinkite pirmines reikšmes ir jų vertinimo ribas.</p>
+      <p class="context">Kinija šiame palyginime – žemyninė Kinija. Skritulių principas pritaikytas užduoties ekonomikos, švietimo ir technologijų, sveikatos bei aplinkos sritims.</p>
+      <div class="meta-line"><span id="data-period">Duomenų laikotarpiai nurodyti prie kiekvieno rodiklio</span><span id="updated"></span></div>
+    </section>
+
+    <section class="reading-guide" aria-labelledby="legend-title">
+      <div><h2 id="legend-title">Kaip skaityti profilį</h2><p>Kiekvienas sektorius – vienas kriterijus. Užpildytų žiedų skaičius ir spalva žymi jo balą.</p></div>
+      <div class="legend-block">
+        <ol class="score-legend" id="score-legend" aria-label="Devyni santykiniai balai"></ol>
+        <div class="legend-ends"><span>1 · santykinai nepalankiau</span><span>9 · santykinai palankiau</span></div>
+        <p class="legend-note">Devyni vienodo pločio atskaitos imties intervalai. Tai nėra oficialios „Circles of Sustainability“ būklės kategorijos ar DVT reitingas.</p>
+      </div>
+    </section>
+
+    <section class="profiles" aria-label="Abiejų šalių profiliai">
+      <article class="profile-card" aria-labelledby="taiwan-title">
+        <div class="profile-heading"><h2 id="taiwan-title">Taivanas</h2><span class="mode-pill">Duomenų profilis</span></div>
+        <div class="wheel" id="wheel-taiwan"></div>
+        <div class="download-row"><button type="button" data-export="taiwan" data-format="svg">Atsisiųsti SVG <span aria-hidden="true">↓</span></button><button type="button" data-export="taiwan" data-format="png">Atsisiųsti PNG <span aria-hidden="true">↓</span></button></div>
+      </article>
+      <article class="profile-card" aria-labelledby="china-title">
+        <div class="profile-heading"><h2 id="china-title">Kinija</h2><span class="mode-pill">Duomenų profilis</span></div>
+        <div class="wheel" id="wheel-china"></div>
+        <div class="download-row"><button type="button" data-export="china" data-format="svg">Atsisiųsti SVG <span aria-hidden="true">↓</span></button><button type="button" data-export="china" data-format="png">Atsisiųsti PNG <span aria-hidden="true">↓</span></button></div>
+      </article>
+    </section>
+    <ol class="domain-key" id="domain-key" aria-label="Sektorių sritys"></ol>
+    <p class="interaction-hint">Užveskite ant sektoriaus arba jį paspauskite. Jo numerį rasite ir kriterijų sąraše.</p>
+
+    <section class="criterion-panel" aria-labelledby="criterion-title">
+      <div class="panel-header"><div><p class="eyebrow">RODIKLIO DUOMENYS</p><h2 id="criterion-title">Kas slypi už balo?</h2></div><span id="criterion-counter" class="counter"></span></div>
+      <label class="select-label" for="criterion">Pasirinkite kriterijų</label>
+      <select id="criterion" aria-describedby="selector-help"><option>Įkeliami rodikliai…</option></select>
+      <p class="field-help" id="selector-help">Sąrašą galima valdyti klaviatūra. Abiejų šalių duomenys rodomi kartu.</p>
+      <div id="criterion-detail"></div>
+      <div class="scenario-section">
+        <label class="scenario-toggle" for="scenario"><input type="checkbox" id="scenario"><span>Scenarijus <small>Eksperimentuokite su balais</small></span></label>
+        <div class="scenario-banner" id="scenario-banner" hidden><strong>Demonstracinis scenarijus.</strong> Keičiami tik diagramos balai. Pirminės reikšmės, šaltiniai ir duomenimis apskaičiuoti balai lieka nepakeisti. Scenarijus neišsaugomas serveryje.</div>
+        <div id="scenario-controls" hidden>
+          <p class="field-help">Keiskite pasirinkto kriterijaus balą slankikliu arba spauskite norimą žiedą atitinkamos šalies sektoriuje.</p>
+          <div class="sliders">
+            <div><label for="scenario-taiwan">Taivano scenarijus <output id="output-taiwan" for="scenario-taiwan">1</output></label><input id="scenario-taiwan" type="range" min="1" max="9" step="1" value="1"></div>
+            <div><label for="scenario-china">Kinijos scenarijus <output id="output-china" for="scenario-china">1</output></label><input id="scenario-china" type="range" min="1" max="9" step="1" value="1"></div>
+          </div>
+          <button type="button" id="reset-scenario" class="text-button">Atkurti visus pradinius balus</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" aria-labelledby="method-title">
+      <div><p class="eyebrow">METODIKA IR RIBOS</p><h2 id="method-title">Balas priklauso nuo palyginimo</h2></div>
+      <div><p>Kiekvieno rodiklio atskaitos imties intervalas nuo mažiausios iki didžiausios reikšmės dalijamas į devynias lygias dalis. Kai mažesnė reikšmė laikoma palankesne, balų kryptis apverčiama.</p><p>Skirtingų rodiklių metai, imtys ir statistinės apibrėžtys gali skirtis. Tai mokomasis santykinis profilis: jo negalima laikyti visos šalies darnumo įrodymu, oficialiu sertifikatu ar priežastinio programų poveikio vertinimu.</p><div class="resource-links"><a id="method-link" href="https://github.com/PovilasJan/taiwan-china-storymaps/blob/main/documents/metodika.md" target="_blank" rel="noopener noreferrer">Visa metodika ↗</a><a href="https://github.com/PovilasJan/taiwan-china-storymaps/blob/main/data/indicators.json" target="_blank" rel="noopener noreferrer">Duomenys ir atskaitos imtys ↗</a><a id="circle-source" href="https://www.circlesofsustainability.org/circles-overview/profile-circles/" target="_blank" rel="noopener noreferrer">Skritulių metodo pavyzdys ↗</a></div></div>
+    </section>
+    <p id="app-status" class="status" role="status" aria-live="polite"></p>
+    <noscript><p class="error-box">Interaktyviems profiliams reikalingas JavaScript. <a href="https://github.com/PovilasJan/taiwan-china-storymaps/blob/main/data/indicators.json">Atverti duomenis GitHub saugykloje</a>.</p></noscript>
+  </main>
+  <footer><span>Originali užduoties vizualizacija · Taivanas ir Kinija</span><a href="https://github.com/PovilasJan/taiwan-china-storymaps" target="_blank" rel="noopener noreferrer">Duomenys, metodika ir programos kodas ↗</a></footer>
+</body>
+</html>

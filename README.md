@@ -4,11 +4,14 @@ Lietuviškas turinio ir duomenų paketas grupinei DSR užduočiai, parengtas imp
 
 **[Atsisiųsti Word dokumentą importui](documents/taivanas-kinija-storymaps.docx?raw=true)** · **[Skaityti pasakojimą](documents/pasakojimas-perziurai.md)** · **[Kaip sudėti StoryMaps](documents/storymaps-importas.md)**
 
+**[Atverti interaktyvius Darnių ratų profilius](https://PovilasJan.github.io/taiwan-china-storymaps/)** · **[Profile Circles naudojimas ir įterpimas](documents/profile-circles.md)**
+
 ## Kas paruošta
 
 - Įžanga, tikslas, uždaviniai, Taivano ir Kinijos DVT priemonių apžvalga, analizė bei išvados.
 - **28 kriterijai, 56 faktinės reikšmės ir 56 apskaičiuoti balai**: po 7 kriterijus kiekvienai iš keturių sričių.
 - Du Darnių ratų paveikslėliai, orientacinis žemėlapis ir keturių rodiklių grafikas.
+- „Profile Circles“ papildymas: interaktyvūs ratai su raudona–geltona–žalia balų skale, rodiklių ir šaltinių peržiūra, PNG / SVG eksportu bei dviem paruoštais spalviniais PNG.
 - Visų kriterijų šaltiniai, metai, vienetai, skaičiavimo formulės, etalonų imtys ir palyginamumo išlygos.
 - Atkuriamas balų skaičiavimas ir dokumento generavimas.
 
@@ -45,6 +48,8 @@ Kai vienodas rodiklis abiem teritorijoms pateikiamas skirtingais būdais, tai pa
 | `documents/pasakojimas.md` | Generatoriaus turinio šaltinis su lentelių ir paveikslėlių žymomis |
 | `documents/storymaps-importas.md` | Konkreti StoryMaps blokų seka ir pristatymo planas |
 | `documents/metodika.md` | Intervalų formulės, etalonų imtys ir analizės ribos |
+| `documents/profile-circles.md` | Profile Circles adaptacija ir įterpimas į StoryMaps |
+| `docs/` | Savarankiškai veikiantis interaktyvus puslapis, publikuojamas per GitHub Pages |
 | `data/indicators.json` | 28 rodikliai, šaltiniai, 56 balai ir tikros etalonų reikšmės |
 | `data/policy-sources.json` | DVT priemonių ir pasakojimo šaltiniai |
 | `assets/` | Originalios šio darbo vizualizacijos |
@@ -57,7 +62,10 @@ Reikia Python 3.11 ar naujesnio. Įdiegę `requirements.txt` priklausomybes, pro
 ```bash
 python scripts/score.py
 python scripts/build.py
+python scripts/build_interactive_data.py
+python scripts/build_profile_circles.py
 python scripts/validate.py
+python scripts/validate_circles.py
 ```
 
 Skaičiavimams pakanka saugykloje išsaugotų etalonų ištraukų; šaltinių duomenys automatiškai neperrašomi naujesnėmis versijomis. Paveikslėlių šriftai gali nežymiai skirtis skirtingose operacinėse sistemose.
@@ -67,5 +75,7 @@ Skaičiavimams pakanka saugykloje išsaugotų etalonų ištraukų; šaltinių du
 Naudoti nacionaliniai Taivano ir Kinijos statistikos šaltiniai, World Bank / ILO, UNDP Human Development Report, Penn World Table 11.0, švietimo lyginamosios lentelės, Global Carbon Budget, Ember, OWID ir IHME. Tikslios nuorodos yra prie kiekvieno rodiklio. Natural Earth žemėlapio duomenys yra public domain.
 
 IHME grafikams naudota nedidelė cituojamų viešai rodomų faktinių reikšmių imtis; visas riboto platinimo pirminis duomenų rinkinys čia neperpublikuojamas. Originalūs dėstytojo PDF, kitos grupės turinys ir pilni statistikos leidiniai į šią saugyklą neįtraukti. Šaltinių duomenims galioja jų teikėjų sąlygos; visam rinkiniui nesuteikiama bendroji licencija, kuri jas pakeistų.
+
+Interaktyvių ratų sandara ir balų spalvų principas pritaikyti iš [Circles of Sustainability — Profile Circles](https://www.circlesofsustainability.com/circles-overview/profile-circles/). Naudojamos užduoties keturios sritys. Spalvos nurodo atskaitos intervalus, o ne originalaus metodo kokybines darnumo būsenas. Braižymo kodas ir paveikslėliai sukurti šiam projektui.
 
 [Kitos grupės pavyzdys](https://storymaps.arcgis.com/stories/7718e245bd354f858c83632492a7c3f5) naudotas tik pagrindinių dalių ir StoryMaps blokų sekai suprasti. Šio darbo tekstas, lentelės ir grafikai parengti atskirai. Turinys parengtas su AI pagalba; skaičiavimai atkuriami, šaltiniai ir jų ribos atskleisti.
