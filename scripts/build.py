@@ -327,7 +327,7 @@ def main():
     readable+='\n\n## Rodiklių šaltiniai\n\n'
     for r in rows:
         readable+=f"**{r['id']} {r['indicator']}.** [Taivano šaltinis]({r['taiwan']['source']}); [Kinijos šaltinis]({r['china']['source']}). {r['note']}\n\n"
-    (DOCS/'pasakojimas-perziurai.md').write_text(readable,encoding='utf-8')
+    (DOCS/'pasakojimas-perziurai.md').write_text(readable.rstrip()+'\n',encoding='utf-8')
     summary={'indicators':len(rows),'scores_taiwan':sum(r['scores']['taiwan'] is not None for r in rows),'scores_china':sum(r['scores']['china'] is not None for r in rows),'docx':path.name}
     (DATA/'build-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(summary,ensure_ascii=True))
